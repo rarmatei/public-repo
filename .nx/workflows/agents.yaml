@@ -1,0 +1,10 @@
+launch-templates:
+  npm-linux-medium-js:
+    resourceClass: "docker_linux_amd64/small"
+    image: 'ubuntu22.04-node20.11-v12'
+    init-steps:
+      - script: echo "repo url $GIT_REPOSITORY_URL"
+      - name: checkout repo
+        uses: 'nrwl/nx-cloud-workflows/main/workflow-steps/checkout/main.yaml'
+      - name: Install Node Modules
+        uses: 'nrwl/nx-cloud-workflows/main/workflow-steps/install-node-modules/main.yaml'
