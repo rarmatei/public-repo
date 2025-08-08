@@ -31,4 +31,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npx nx start-ci-run --distribute-on="1 linux-medium-js"
+      - run: npx nx start-ci-run --distribute-on="1 npm-linux-medium-js"
