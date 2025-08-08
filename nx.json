@@ -1,4 +1,4 @@
-{
+x{
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": [
@@ -13,6 +13,7 @@
     ]
   },
   "nxCloudId": "68960b07e5b4bdab639eaa3e",
+  "bust": 1,
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
